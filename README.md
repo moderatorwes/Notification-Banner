@@ -1,7 +1,7 @@
 Zendesk Notification Banner v2
 ==============================
 
-Have you ever wanted an easy way to notify your end users of System Outages, Important Announcements, or Releases.  If so, then the Notification Banner v2 is exaclty what you are looking for.  In my previous versions we had to add a word like "Issue" in the title of your article.  For this new verison we are going to leverage the Zendesk API and use the Article labels to display our alerts.
+Have you ever wanted an easy way to notify your end users of System Outages, Important Announcements, or Releases.  If so, then the Notification Banner v2 is exaclty what you are looking for.  In my previous versions we had to add a word like "Issue" in the title of your article in order for the notification to show.  With v2 we are going to leverage the Zendesk API and use the Article labels to display our alerts.
 
 
 [LIVE DEMO](https://mw-notification.zendesk.com/hc/en-us)
