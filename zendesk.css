@@ -1,6 +1,8 @@
 /*MW-Notificaiton Banner CSS */
 /* Common, default styles for the notification box */
 
+/* change the background color by editing "background"  */
+/* change the text color by editing "color"  */
 .ns-box {
 	background: rgba(192, 57, 43,0.85);
 	padding: 10px 20px 20px 20px;
@@ -91,7 +93,7 @@
   font-size: 2.2em;
 }
 
-/* To bar notifications */
+/* Top bar notifications */
 .ns-box.ns-bar {
 	top: 0;
 	left: 0;

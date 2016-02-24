@@ -50,34 +50,46 @@ Article Labels
 
 Customizations
 --------------
-How do I change the background color of the box?
+### How do I change the background color of the box?
+
+Edit the background in this statement (near the top of the css)
 .ns-box {
     background: rgba(192, 57, 43,0.85);
 }
 
-How do I change the font color of the text?
+### How do I change the font color of the text?
+
+Edit the color in this statement (near the top of the css)
+
 .ns-box {
     color: rgba(250,251,255,0.95);
 }
 
-How do I change the label name to something else?
+### How do I define the article label which controls the popup?
+
 Change names=alert on the line below to anything you would like.
 
-$.get( "https://yourdomain.zendesk.com/api/v2/help_center/articles.json?label_names=alert" ).done(function( data ) {
+> $.get( "https://yourdomain.zendesk.com/api/v2/help_center/articles.json?label_names=alert" ).done(function( data ) {
 
-How do I remove the article title or article body?
+### How do I remove the article title or article body?
+
 You can edit the line below (to remove the body remove the +item.body+)
 
 <a href="'+ item.html_url + '">' + item.title + '</a>' + item.body + '</p>
 
-How do I use a different icon?  Zendesk uses Entypo icons by default
-CSS - change the content (codes can be found here - http://web.archive.org/web/20140912210715/http://entypo.com/characters/)
+### How do I use a different icon?
+
+Zendesk uses Entypo icons by default
+
+In the CSS - change the content. A list of codes can be found here:
+
+Wayback Machine Version of [entypo.com/characters](http://web.archive.org/web/20140912210715/http://entypo.com/characters/)
 
 .megaphone:before { 
   content:'\1F4E3';
 }
 
-Can I use FontAwesome Icons?
+### Can I use FontAwesome Icons?
 
 You sure can.  I love to use Font Awesome icons in my designs
 
@@ -89,6 +101,7 @@ CSS (adjust color and font size for the Font Awesome icon)
 }
 JS 
 Replace
+
 <span class="megaphone"></span>
 With
 <i class="fa fa-bullhorn"></i>
