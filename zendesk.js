@@ -1,5 +1,5 @@
   // MW-Notification Banner
-   $.get( "https://yourdomain.zendesk.com/api/v2/help_center/articles.json?label_names=alert" ).done(function( data ) {
+   $.get( "/api/v2/help_center/articles.json?label_names=alert" ).done(function( data ) {
      
    $.each(data.articles, function(index,item) {
      
