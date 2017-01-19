@@ -44,10 +44,10 @@ CSS
 JS
 * Open up the JS folder tab in Zendesk
 * Copy the code from the zendesk.js file above.  Paste it into Zendesk.
-* On the first line change "yourdomain" to your zendesk sub-domain.
 
 Article Labels
 * Go edit one of your articles and add a label called "alert" all lowercase.
+* Note: You may have multiple articles which have the default label `alert` already applied. You can modify the JS to look for a new label, or clean up the articles which already have this label value applied.
 
 Customizations
 --------------
