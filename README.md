@@ -56,16 +56,16 @@ Customizations
 Edit the background in this statement (near the top of the css)
 ```.ns-box {
     background: rgba(192, 57, 43,0.85);
-}```
-
+}
+```
 ### How do I change the font color of the text?
 
 Edit the color in this statement (near the top of the css)
 
 ```.ns-box {
     color: rgba(250,251,255,0.95);
-}```
-
+}
+```
 ### How do I define the article label which controls the notification?
 
 Change names=alert on the line below to anything you would like.
@@ -76,8 +76,8 @@ Change names=alert on the line below to anything you would like.
 
 You can edit the line below (to remove the body remove the +item.body+)
 
-```<a href="'+ item.html_url + '">' + item.title + '</a>' + item.body + '</p>```
-
+```<a href="'+ item.html_url + '">' + item.title + '</a>' + item.body + '</p>
+```
 ### How do I use a different icon?
 
 Zendesk uses Entypo icons by default
@@ -88,8 +88,8 @@ Wayback Machine Version of [entypo.com/characters](http://web.archive.org/web/20
 
 ```.megaphone:before { 
   content:'\1F4E3';
-}```
-
+}
+```
 ### Can I use FontAwesome Icons?
 
 You sure can.  I love to use Font Awesome icons in my designs
@@ -100,18 +100,20 @@ CSS (adjust color and font size for the Font Awesome icon)
 ```.ns-box-inner i {
     color: #fff;
     font-size: 3.8em;
-}```
+}
+```
 JS 
 Replace
 
 ```<span class="megaphone"></span>
 With
-<i class="fa fa-bullhorn"></i>```
-
+<i class="fa fa-bullhorn"></i>
+```
 ### How do I only show the alert on the Homepage and not all the other pages?
 
 Add the first line at the very top of your code and the end bracket at the very end of your code.
 
 ```if (window.location.href == "https://yoururl.zendesk.com/hc/en-us") {
   ->notification code would be here ->
-}```
+}
+```
