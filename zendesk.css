@@ -4,6 +4,7 @@
 /* change the background color by editing "background"  */
 /* change the text color by editing "color"  */
 .ns-box {
+	position: relative;
 	background: rgba(192, 57, 43,0.85);
 	padding: 10px 20px 20px 20px;
 	line-height: 1.4;
@@ -51,7 +52,7 @@
 	backface-visibility: hidden;
 }
 
-.ns-close:hover, 
+.ns-close:hover,
 .ns-close:focus {
 	outline: none;
 }
@@ -87,7 +88,7 @@
     font-size: 3.8em;
 }
 
-.megaphone:before { 
+.megaphone:before {
   content:'\1F4E3';
   font-family: "entypo";
   font-size: 2.2em;

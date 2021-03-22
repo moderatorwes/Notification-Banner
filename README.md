@@ -15,6 +15,9 @@ Updates
 -------
 * 02/08/16 - Initial Commit
 * 03/02/16 - Added more Q&A
+* 03/22/21:
+  * Code converted to Vanilla JavaScript so it can be compatible with multiple themes (Copenhagen v2.+ doesn't support jQuery anymore)
+  * Fixed "close" button not showing properly issue
 
 
 Todays Menu
@@ -23,7 +26,7 @@ Todays Menu
 * API
 * CSS
 * HTML
-* JS/JQuery
+* JS
 * Entypo font icons or FontAwesome (default uses Entypo)
 
 How to Install
@@ -70,16 +73,20 @@ Edit the color in this statement (near the top of the css)
 ```
 ### How do I define the article label which controls the notification?
 
-Change names=alert on the line below to anything you would like.
+Change the `label` variable on the line below to anything you would like.
 
-> $.get( "https://yourdomain.zendesk.com/api/v2/help_center/articles.json?label_names=alert" ).done(function( data ) {
+```
+// Article label to be considered for the alerts
+const label = 'alert'
+```
 
 ### How do I remove the article title or article body?
 
-You can edit the line below (to remove the body remove the +item.body+)
+You can edit the line below and set `showArticleBody` to `false`
 
 ```
-<a href="'+ item.html_url + '">' + item.title + '</a>' + item.body + '</p>
+// Show the article body within the alertbox? (Boolean: true/false)
+const showArticleBody = true
 ```
 ### How do I use a different icon?
 
