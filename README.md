@@ -15,7 +15,7 @@ Updates
 -------
 * 02/08/16 - Initial Commit
 * 03/02/16 - Added more Q&A
-* 03/22/21 - thank you mdebortoli
+* 03/22/21 - thank you [mdebortoli](https://github.com/mdebortoli)
   * Code converted to Vanilla JavaScript so it can be compatible with multiple themes (Copenhagen v2.+ doesn't support jQuery anymore)
   * Fixed "close" button not showing properly issue
 
